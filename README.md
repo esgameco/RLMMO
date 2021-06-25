@@ -2,7 +2,7 @@
 
 A text-based roguelike mmo.
 
-## Stages
+### Stages
 
 - Stage 1: Testing
   - Tech Stacks:
