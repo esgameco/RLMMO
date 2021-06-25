@@ -6,7 +6,7 @@ A text-based roguelike mmo.
 
 - Stage 1: Testing
   - Tech Stacks:
-    - HTML5, CSS, JS for frontend
+    - HTML5, CSS, JS, Axios for frontend
     - Node.js + Express.js for backend
     - MongoDB for database
   - Features:
