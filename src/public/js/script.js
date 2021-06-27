@@ -4,8 +4,7 @@ window.addEventListener('load', () => {
     const catOutput = catForm.elements['output']
 
     catSubmit.addEventListener('click', async () => {
-        const res = await fetch('/api/cats');
-        const resJson = await res.json();
-        catOutput.innerHTML = resJson.cats;
+        const res = await axios.get('/api/cats');
+        catOutput.innerHTML = res.data.cats;
     });
 });
