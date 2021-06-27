@@ -5,6 +5,4 @@ class APIHelper {
     }
 }
 
-define(() => {
-    return new APIHelper();
-});
+export default new APIHelper();

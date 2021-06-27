@@ -7,20 +7,22 @@
 
         <link rel="stylesheet" href="css/style.css">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="/js/require.js"></script>
-        <script src="/js/main.js"></script>
+        <script type="module" src="/js/main.js"></script>
         <title>RLMMO</title>
     </head>
     <body>
-        <h1>RLMMO</h1>
-        <p>A new roguelike experience</p>
-        <br><br>
-
-        <form id="cats">
-            <label>
-                Get number of cats: <button type="button" name="submit">Submit</button>
-            </label>
-            <p><output name="output"></output></p>
-        </form>
+        <header>
+            <h1>RLMMO</h1>
+            <p>A new roguelike experience</p>
+        </header>
+        <main>
+            <br><br>
+            <form id="cats">
+                <label>
+                    Get number of cats: <button type="button" name="submit">Submit</button>
+                </label>
+                <p><output name="output"></output></p>
+            </form>
+        </main>
     </body>
 </html>
