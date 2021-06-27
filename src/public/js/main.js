@@ -6,7 +6,15 @@ window.addEventListener('load', () => {
     const catOutput = catForm.elements['output'];
 
     catSubmit.addEventListener('click', async () => {
-        const res = await apihelper.getCats();
-        catOutput.innerHTML = res.data.cats;
+        catOutput.innerHTML = await apihelper.getCats();
+    });
+
+    const plusTwoForm = document.getElementById('plustwo');
+    const plusTwoInput = plusTwoForm.elements['num'];
+    const plusTwoSubmit = plusTwoForm.elements['submit'];
+    const plusTwoOutput = plusTwoForm.elements['output'];
+
+    plusTwoSubmit.addEventListener('click', async () => {
+        plusTwoOutput.innerHTML = await apihelper.postPlusTwo(plusTwoInput.value);
     });
 });
